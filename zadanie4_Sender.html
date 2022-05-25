@@ -1,0 +1,50 @@
+<html>
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2, utf-8">
+<title> ZAD4 </title>
+<center><font color="RED"><h1>Sposoby podłączania styli do strony.</h1></font>
+<body bgcolor="black"></body>
+</head>
+<body>
+
+<font color="RED"><h3><b> : <u>Zewnętrzny</u> arkusz stylów :</b></h3>
+<textarea style="resize:none" rows=8 cols=45 readonly > 
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css"/>
+</head> 
+</textarea> 
+
+<font color="RED"><h3><b> : Styl <u> lokalny</u> inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli
+dopisanie arkusza do wybranego bloku treści strony :</b></h3>
+<textarea style="resize:none" rows=8 cols=45 readonly > 
+<head>
+<selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor>
+</head> 
+</textarea> 
+ 
+<font color="RED"> <h3><b> : <u>Wewnętrzny</u> arkusz stylów :</b></h3>
+<textarea style="resize:none" rows=8 cols=45 readonly > 
+<head>
+<style type="text/css">
+selektor1 { cecha: wartość; cecha2: wartość2... }
+selektor2 { cecha: wartość; cecha2: wartość2... }
+</style>
+</head> 
+</textarea> 
+
+<font color="RED"><h3> : <u>Alternatywny</u> arkusz stylów :</h3>
+<textarea style="resize:none" rows=8 cols=45 readonly > 
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" />
+<link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" />
+<link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" />
+</head> 
+</textarea> 
+
+<font color="RED"><h3> : <u>Import</u> arkusza stylów :</h3> <br>
+<textarea style="resize:none" rows=8 cols=45 readonly ><style type="text/css">
+ @import url(adres zewnętrznego arkusza stylów);
+</style></textarea> 
+
+</body>
+</html>
